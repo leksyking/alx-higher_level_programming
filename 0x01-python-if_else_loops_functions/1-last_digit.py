@@ -15,8 +15,4 @@ if lastDigit == 0:
 elif lastDigit > 5 and lastDigit % 10 != 0:
     print(f"{message} and is greater than 5")
 else:
-<<<<<<< HEAD
-    print(f"{message} and is less than 6 and not 0\n")
-=======
-    print(f"{message} and is less than 6 and not 0\n")
->>>>>>> db0d36fec92bdbfe16d70e34f976b882ace24ee6
+    print(f"{message} and is less than 6 and not 0")
