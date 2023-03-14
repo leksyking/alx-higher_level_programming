@@ -1,14 +1,13 @@
 #!/usr/bin/node
-let i;
-let j;
-const square = Number(process.argv[2]);
-if (!square) {
-  console.log('Missing size');
-} else {
-  for (i = 0; i < square; i++) {
-    for (j = 0; j < square; j++) {
-      console.log('x');
+let size = Math.floor(Number(process.argv[2]));
+
+if (isNaN(size)) {
+    console.log("Missing size");
+} else{
+    for (let i = 0; i < size; i++){
+        let row = ''
+        for (let j = 0; j < size; j++) row += 'x';{
+            console.log(row);
+        }
     }
-    console.log('');
-  }
 }
