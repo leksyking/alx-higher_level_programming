@@ -25,7 +25,7 @@ def main(argv):
             print("No result")
         else:
             print("[{}] {}".format(result['id'], result['name']))
-    except:
+    except Exception as e:
         print("Not a valid JSON")
 
 
